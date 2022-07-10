@@ -1,9 +1,12 @@
 import React from 'react'
+import Card from './components/UI/Card';
+import PopUp from './components/UI/PopUp';
 
 const App = () => {
   return (
     <div>
-      <h2 style={{color : 'white'}}>Appliying Fundamentals</h2>
+      {/* <Card/> */}
+      <PopUp/>
     </div>
   );
 }

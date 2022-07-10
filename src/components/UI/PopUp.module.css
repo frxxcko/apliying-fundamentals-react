@@ -1,0 +1,27 @@
+.title_header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(50, 10, 88);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+    color: white;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-inline-start: 0.7rem;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.p{
+    position: absolute;
+    top: 5rem;
+    font-size: 1.2rem;
+    padding-inline: 1rem 1rem;
+}
