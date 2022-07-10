@@ -3,7 +3,7 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      <h2>Appliying Fundamentals React</h2>
+      <h2 style={{color : 'white'}}>Appliying Fundamentals</h2>
     </div>
   );
 }
