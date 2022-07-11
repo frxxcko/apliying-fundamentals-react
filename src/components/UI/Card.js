@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Card.module.css'
 
 const Card = (props) => {
-  const [isPopUp, setIsPopUp] = useState(false);
 
     return (
     <div className={styles.card}>

@@ -3,10 +3,10 @@
     border: 0px;
     border-radius: 5px;
     color: white;
-    height: 2rem;
-    width: 4rem;
+    height: 2.5rem;
+    width: 20%;
+    cursor: pointer;
     position: absolute;
     bottom: 1rem;
-    right: 2rem;
-    cursor: pointer;
+    right: 1rem;
 }
