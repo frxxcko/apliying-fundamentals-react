@@ -1,4 +1,4 @@
-# Getting Started with Create React App
-
-
+# Simple project to solidify fundamentals
+    Deploy: https://frxxcko.github.io/appliying-fundamentals-react
+    
 ## Available Scripts
