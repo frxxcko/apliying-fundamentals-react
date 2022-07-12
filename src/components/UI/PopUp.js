@@ -5,18 +5,16 @@ import Button from './Button'
 import PopUpBackground from './PopUpBackground'
 
 const PopUp = (props) => {
-  
-  
+
+  const closePopup = () => props.closePopup();
+
   return (
-    <PopUpBackground>
-      <Card>
+    <PopUpBackground >
+      <Card className={styles.card_popup}>
         <div className={styles.container}>
-          <h2 className={styles.title_header}>
-            {props.children}
-            Hello world!
-          </h2>
-          <p className={styles.p}>Hello world!</p>
-          <Button type='button'>Okay</Button>
+          <h2 className={styles.title_header}>{props.errorTitle}</h2>
+          <p className={styles.p}>{props.errorMessage}</p>
+          <Button type='button' click={closePopup}>Okay</Button>
         </div>
       </Card>
     </PopUpBackground>

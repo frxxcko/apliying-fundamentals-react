@@ -1,0 +1,17 @@
+.user_list{
+    margin: auto;
+    margin-top: 1.7rem;
+    height: 80%;
+    width: 90%;
+}
+
+.card_list{
+    height: auto;
+    padding-block-start: .5rem;
+    padding-inline-start: 1rem;
+}
+
+h2{
+    color: rgb(121, 66, 138);
+    display: inline;
+}
