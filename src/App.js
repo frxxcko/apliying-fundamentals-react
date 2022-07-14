@@ -28,7 +28,6 @@ const App = () => {
   }
 
   const displayErrorModal = (input) => {
-    debugger
     switch (input) {
       case 'username':
         displayUsernameErrorModal();

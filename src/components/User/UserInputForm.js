@@ -12,7 +12,6 @@ const UserInputForm = (props) => {
 
     const isUserInputValid = (username, age) => {
         let isValidInput = true;
-        debugger
         if(!username || username.split(' ').length > 1)
         {
             isValidInput = false;
@@ -29,7 +28,6 @@ const UserInputForm = (props) => {
 
     const submitHandler = (event) => {
         event.preventDefault();
-        debugger
         if(!isUserInputValid(username, userAge)) return;
 
         const user = {
