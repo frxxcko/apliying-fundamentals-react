@@ -47,10 +47,12 @@ const App = () => {
   return (
     <>
       {isPopUp && <PopUp errorMessage={errorMessage} errorTitle={errorTitle} closePopup={closePopup} />}
-    <Container>
-      <UserInputForm addUser={addUserToList} displayErrorModal={displayErrorModal}/>
-      <UserList userList={usersList}/>
-    </Container>
+      {!isPopUp &&
+      <Container>
+        <UserInputForm addUser={addUserToList} displayErrorModal={displayErrorModal}/>
+        <UserList userList={usersList}/>
+      </Container>
+      }
     </>
   );
 }
