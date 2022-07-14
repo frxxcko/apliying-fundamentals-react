@@ -17,8 +17,9 @@ Some of the topics you might see in this project as for today:
 - Little bit of Styling, later I'll implement <strong>Material UI</strong> and/or <strong>Styled Components</strong> 
 
 # Goals to be acomplished in the next iteration
-- Add a chart that shows all expenses by month
+- For the next one I'll focus on the logic for the deletion of user items from the List Items
+- Accessibility, refine navigation and interaction with keyboard, I'll be using NVDA for testing this imlpementations
 - Personalized experience and fully operational expenses app
 
 # Notes
-This project is still under development, I'm triying to build a simple React App that implements all the fundamentals of React and more.
+I'm triying to build a simple React App that implements all the fundamentals of React. Thank you for taking the time to review this simple project.
