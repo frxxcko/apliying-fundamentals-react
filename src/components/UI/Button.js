@@ -6,7 +6,7 @@ const Button = (props) => {
   
 
   return (
-    <button className={styles.button} type={props.type} onClick={ () => props.click()}>
+    <button className={styles.button} type={props.type} onClick={() => props.closePopup()}>
       {props.children}
     </button>
     )

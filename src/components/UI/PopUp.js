@@ -9,12 +9,12 @@ const PopUp = (props) => {
   const closePopup = () => props.closePopup();
 
   return (
-    <PopUpBackground >
+    <PopUpBackground>
       <Card className={styles.card_popup}>
-        <div className={styles.container}>
+        <div className={styles.container} role='alert'>
           <h2 className={styles.title_header}>{props.errorTitle}</h2>
           <p className={styles.p}>{props.errorMessage}</p>
-          <Button type='button' click={closePopup}>Okay</Button>
+          <Button type='button' closePopup={closePopup}>Okay</Button>
         </div>
       </Card>
     </PopUpBackground>
