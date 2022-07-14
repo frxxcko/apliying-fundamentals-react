@@ -8,7 +8,7 @@ const App = () => {
   const USERNAME_ERROR_TITLE = "Invalid Username";
   const USERNAME_ERROR_MESSAGE = "Please enter one valid username.";
   const AGE_ERROR_TITLE = "Invalid input age";
-  const AGE_ERROR_MESSAGE = "Age can't be a negative number.";
+  const AGE_ERROR_MESSAGE = "Age input can't be empty or a negative number.";
   
   const [isPopUp, setIsPopUp] = useState('');
   const [usersList, setUsersList] = useState([]);

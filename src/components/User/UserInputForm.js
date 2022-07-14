@@ -17,7 +17,7 @@ const UserInputForm = (props) => {
             isValidInput = false;
             props.displayErrorModal('username');
         }
-        else if(age < 0)
+        else if(!age || age < 0)
         {
             isValidInput = false;
             props.displayErrorModal('age');
