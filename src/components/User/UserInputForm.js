@@ -12,7 +12,9 @@ const UserInputForm = (props) => {
 
     const isUserInputValid = (username, age) => {
         let isValidInput = true;
-        if(!username || username.split(' ').length > 1)
+        let _username = username.trim();
+        debugger
+        if(!_username || _username.split(' ').length > 1)
         {
             isValidInput = false;
             props.displayErrorModal('username');
