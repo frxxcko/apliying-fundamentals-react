@@ -1,5 +1,5 @@
 .user_list{
-    margin: auto;
+    margin-left: 0.6rem;
     margin-top: 1.7rem;
     height: 80%;
     width: 90%;
@@ -7,11 +7,19 @@
 
 .card_list{
     height: auto;
-    padding-block-start: .5rem;
-    padding-inline-start: 1rem;
+    padding-block-start: 1rem;
+    padding-inline-start: 1.2rem;
 }
 
 h2{
-    color: rgb(121, 66, 138);
+    color: #EEEEEE;
     display: inline;
+    font-size: 1.3rem;
+}
+
+.span_message{
+    margin-left: .5rem;
+    font-size: .8rem;
+    font-weight: 400;
+    color: #e64040;
 }
