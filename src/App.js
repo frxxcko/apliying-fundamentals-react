@@ -10,10 +10,12 @@ const App = () => {
   const AGE_ERROR_TITLE = "Invalid input age";
   const AGE_ERROR_MESSAGE = "Age input can't be empty or a negative number.";
   
-  const [isPopUp, setIsPopUp] = useState('');
-  const [usersList, setUsersList] = useState([]);
+  const [ isPopUp, setIsPopUp ] = useState('');
+  const [ usersList, setUsersList ] = useState([{id: 0, username: '', age: 0}]);
   const [ errorMessage, setErrorMessage ] = useState("Error message.");
   const [ errorTitle, setErrorTitle ] = useState("Error title");
+  const [ showMaxUsersMessage , setShowMaxUsersMessage ] = useState('');
+
 
   const displayUsernameErrorModal = () => {
       setErrorTitle(USERNAME_ERROR_TITLE)
@@ -40,8 +42,22 @@ const App = () => {
     }
   }
 
-  const addUserToList = (user) => setUsersList( prevUserList => [ user , ...prevUserList ]);
-
+  const addUserToList = (user) => {
+    if(usersList.length <= 5)
+    {
+      setUsersList( prevUserList => [ user , ...prevUserList ]);
+      return;
+    }
+    
+    setShowMaxUsersMessage(true)
+  }
+  
+  const setNewID = () => Number(usersList?.at(0).id) + 1
+  
+  const deleteUserItem = (userIdToDelete) => {
+    setShowMaxUsersMessage(false);
+    setUsersList(usersList?.filter( user => user?.id !== userIdToDelete));
+  }
   const closePopup = () => setIsPopUp(false);
 
   return (
@@ -49,8 +65,8 @@ const App = () => {
       {isPopUp && <PopUp errorMessage={errorMessage} errorTitle={errorTitle} closePopup={closePopup} />}
       {!isPopUp &&
       <Container>
-        <UserInputForm addUser={addUserToList} displayErrorModal={displayErrorModal}/>
-        <UserList userList={usersList}/>
+        <UserInputForm addUser={addUserToList} displayErrorModal={displayErrorModal} setNewID={setNewID}/>
+        <UserList userList={usersList} showMaxUsersMessage={showMaxUsersMessage} deleteUserItem={deleteUserItem}/>
       </Container>
       }
     </>
