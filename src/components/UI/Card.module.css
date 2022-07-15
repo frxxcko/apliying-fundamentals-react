@@ -37,6 +37,14 @@
     }
 }
 
+@media all and (min-width: 414px){
+    .card{
+        height: 35%;
+        min-height: 35%;
+        width: 90%;
+    }
+}
+
 @media all and (min-width: 540px){
     .card{
         height: 35%;
