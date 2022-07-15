@@ -1,10 +1,10 @@
 .title_header{
     display: flex;
     align-items: center;
-    background-color: rgb(50, 10, 88);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
-    color: white;
+    background-color: rgb(236, 236, 236);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;    
+    color: black;
     height: 3rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -24,8 +24,10 @@
     top: 5rem;
     font-size: 1.2rem;
     padding-inline: 1rem 1rem;
+    color: black;
 }
 
 .card_popup{
-    height: 20%!important;
+    height: 20%;
+    background-color: rgb(205, 207, 211)!important;
 }
