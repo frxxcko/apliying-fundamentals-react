@@ -12,18 +12,24 @@
 .form_control input{
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 0px 5px 0px rgba(112, 37, 233, 0.26);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.26);
+    background-color: #000000;
     padding-inline-start: 1rem;
     margin: 0.5rem;
     font-size: 1rem;
     height: 2.5rem;
     width: 90%;
+    color: #fff;
 }
 
 .form_control label{
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(59, 7, 75);
+    color: #EEEEEE;
+}
+
+.form_control :nth-child(3){
+    margin-top: .5rem;
 }
 
 @media (max-width: 500px){
