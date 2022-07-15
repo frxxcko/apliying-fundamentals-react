@@ -1,4 +1,4 @@
-# Simple project to solidify fundamentals
+# Simple project with fundamentals
 
 Deploy: https://frxxcko.github.io/appliying-fundamentals-react
 
