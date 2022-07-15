@@ -13,7 +13,6 @@ const UserInputForm = (props) => {
     const isUserInputValid = (username, age) => {
         let isValidInput = true;
         let _username = username.trim();
-        debugger
         if(!_username || _username.split(' ').length > 1)
         {
             isValidInput = false;
@@ -30,17 +29,20 @@ const UserInputForm = (props) => {
 
     const submitHandler = (event) => {
         event.preventDefault();
+        
         if(!isUserInputValid(username, userAge)) return;
-
-        const user = {
+        
+        const USER = {
+            id: props.setNewID(),
             username: username.trim(),
             age: userAge
         }
-        props.addUser(user)
+
+        props.addUser(USER)
     }
 
     return (
-        <Card >
+        <Card className={styles.card_form}>
             <form onSubmit={submitHandler} className={styles.form_control}>
                 <label htmlFor="username">Username</label>
                 <input onChange={captureUsername} type="text" id="username" placeholder='Please type an username' autoComplete='off'/>
