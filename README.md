@@ -9,6 +9,7 @@ Some of the topics you might see in this project as for today:
 - State Handling
 - Accessibility tested with NVDA Screen Reader
 - Two Way Binding
+- Portals from React DOM
 - Dinamyc Rendering implementing <strong>map()</strong> method
 - UX and Conditional rendering
 - Popup Modal and it's logic
