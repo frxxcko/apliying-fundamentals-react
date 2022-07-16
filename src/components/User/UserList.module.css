@@ -7,7 +7,7 @@
 }
 
 .card_list{
-    overflow: auto;
+    height: auto;
     padding-block-start: 1rem;
     padding-inline-start: 1.2rem;
 }
@@ -23,4 +23,10 @@ h2{
     font-size: .8rem;
     font-weight: 400;
     color: #e64040;
+}
+
+@media screen and (min-width: 300px) {
+    .card_list{
+        overflow: scroll;
+    }
 }
