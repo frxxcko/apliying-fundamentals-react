@@ -3,10 +3,11 @@
     margin-top: 1.7rem;
     height: 80%;
     width: 90%;
+
 }
 
 .card_list{
-    height: auto;
+    overflow: auto;
     padding-block-start: 1rem;
     padding-inline-start: 1.2rem;
 }
