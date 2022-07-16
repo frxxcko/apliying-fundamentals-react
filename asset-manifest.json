@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/appliying-fundamentals-react/static/css/main.830b6e2b.css",
-    "main.js": "/appliying-fundamentals-react/static/js/main.852bc4fd.js",
+    "main.css": "/appliying-fundamentals-react/static/css/main.67fc9253.css",
+    "main.js": "/appliying-fundamentals-react/static/js/main.75fce1a2.js",
     "index.html": "/appliying-fundamentals-react/index.html",
-    "main.830b6e2b.css.map": "/appliying-fundamentals-react/static/css/main.830b6e2b.css.map",
-    "main.852bc4fd.js.map": "/appliying-fundamentals-react/static/js/main.852bc4fd.js.map"
+    "main.67fc9253.css.map": "/appliying-fundamentals-react/static/css/main.67fc9253.css.map",
+    "main.75fce1a2.js.map": "/appliying-fundamentals-react/static/js/main.75fce1a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.830b6e2b.css",
-    "static/js/main.852bc4fd.js"
+    "static/css/main.67fc9253.css",
+    "static/js/main.75fce1a2.js"
   ]
 }
