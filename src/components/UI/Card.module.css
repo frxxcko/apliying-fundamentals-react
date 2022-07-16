@@ -15,7 +15,7 @@
 
 @media all and (max-width: 380px){
     .card{
-        min-height: 39%;
+        min-height: 39%!important;
     }
 }
 
