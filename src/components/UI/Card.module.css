@@ -15,7 +15,7 @@
 
 @media all and (max-width: 380px){
     .card{
-        min-height: 40%!important;
+        min-height: 39.5%!important;
     }
 }
 
@@ -56,7 +56,7 @@
 
 @media all and (min-width: 912px){
     .card{
-        min-height: 18.5%;
+        min-height: 28.5%;
     }
 }
 
