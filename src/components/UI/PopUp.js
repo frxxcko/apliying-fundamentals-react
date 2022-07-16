@@ -9,7 +9,7 @@ const PopUp = (props) => {
   const closePopup = () => props.closePopup();
 
   return (
-    <PopUpBackground>
+    <PopUpBackground closePopup={closePopup}>
       <Card className={styles.card_popup}>
         <div className={styles.container} role='alert'>
           <h2 className={styles.title_header}>{props.errorTitle}</h2>
