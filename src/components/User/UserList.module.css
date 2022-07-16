@@ -25,7 +25,7 @@ h2{
     color: #e64040;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-height: 800px) {
     .card_list{
         overflow: scroll;
     }
