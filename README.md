@@ -2,7 +2,7 @@
 
 Deploy: https://frxxcko.github.io/appliying-fundamentals-react
 
-Last update: 15/07/2022 - <i>Note: this excercise is done and in continuous improvement.</i>
+Last update: 16/07/2022 - <i>Note: this excercise is done, however in continuous improvement.</i>
 
 Some of the topics you might see in this project as for today:
 - Functional Components
