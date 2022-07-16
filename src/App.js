@@ -63,12 +63,10 @@ const App = () => {
   return (
     <>
       {isPopUp && <PopUp errorMessage={errorMessage} errorTitle={errorTitle} closePopup={closePopup} />}
-      {!isPopUp &&
       <Container>
         <UserInputForm addUser={addUserToList} displayErrorModal={displayErrorModal} setNewID={setNewID}/>
         <UserList userList={usersList} showMaxUsersMessage={showMaxUsersMessage} deleteUserItem={deleteUserItem}/>
       </Container>
-      }
     </>
   );
 }
