@@ -12,20 +12,23 @@ const App = () => {
   
   const [ isPopUp, setIsPopUp ] = useState('');
   const [ usersList, setUsersList ] = useState([{id: 0, username: '', age: 0}]);
-  const [ errorMessage, setErrorMessage ] = useState("Error message.");
-  const [ errorTitle, setErrorTitle ] = useState("Error title");
   const [ showMaxUsersMessage , setShowMaxUsersMessage ] = useState('');
-
+  
+  const [ errorInfo, setErrorInfo ] = useState({ title: "Error title.", message: "Error message."});
 
   const displayUsernameErrorModal = () => {
-      setErrorTitle(USERNAME_ERROR_TITLE)
-      setErrorMessage(USERNAME_ERROR_MESSAGE);
-      setIsPopUp(true);
+    setErrorInfo({ 
+      title: USERNAME_ERROR_TITLE,
+      message: USERNAME_ERROR_MESSAGE
+    })
+    setIsPopUp(true);
   }
-
+  
   const displayAgeErrorModal = () =>{
-      setErrorTitle(AGE_ERROR_TITLE)
-      setErrorMessage(AGE_ERROR_MESSAGE);
+    setErrorInfo({ 
+      title: AGE_ERROR_TITLE,
+      message: AGE_ERROR_MESSAGE
+    })
       setIsPopUp(true);
   }
 
@@ -62,7 +65,7 @@ const App = () => {
 
   return (
     <>
-      {isPopUp && <PopUp errorMessage={errorMessage} errorTitle={errorTitle} closePopup={closePopup} />}
+      {isPopUp && <PopUp errorInfo={errorInfo} errorMessage={errorMessage} errorTitle={errorTitle} closePopup={closePopup} />}
       <Container>
         <UserInputForm addUser={addUserToList} displayErrorModal={displayErrorModal} setNewID={setNewID}/>
         <UserList userList={usersList} showMaxUsersMessage={showMaxUsersMessage} deleteUserItem={deleteUserItem}/>
