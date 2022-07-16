@@ -39,16 +39,19 @@ const UserInputForm = (props) => {
         }
 
         props.addUser(USER)
+
+        setUsername('');
+        setUserAge('');        
     }
 
     return (
         <Card className={styles.card_form}>
             <form onSubmit={submitHandler} className={styles.form_control}>
                 <label htmlFor="username">Username</label>
-                <input onChange={captureUsername} type="text" id="username" placeholder='Please type an username' autoComplete='off'/>
+                <input autoFocus value={username} onChange={captureUsername} type="text" id="username" placeholder='Please type an username' autoComplete='off'/>
                 
                 <label htmlFor="age">Age (Years)</label>
-                <input onChange={captureUserAge} type="number" id="age" placeholder='Please type your age' />
+                <input value={userAge !== 0 && userAge} onChange={captureUserAge} type="number" id="age" placeholder='Please type your age' />
 
                 <Button type='submit'>Submit</Button>
             </form>
