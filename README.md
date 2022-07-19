@@ -4,7 +4,8 @@ Deploy: https://frxxcko.github.io/appliying-fundamentals-react
 
 Last update: 16/07/2022
 
-<p><i>Note:</i>
+<h3>Note:</h3>
+<p>
 - Accessibility: You can navigate using Tab and interact with list items using Space to delete them!
 - This excercise is done, however in continuous improvement!
 </p>
