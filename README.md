@@ -2,7 +2,12 @@
 
 Deploy: https://frxxcko.github.io/appliying-fundamentals-react
 
-Last update: 16/07/2022 - <i>Note: this excercise is done, however in continuous improvement.</i>
+Last update: 16/07/2022
+
+<p><i>Note:</i>
+- Accessibility: You can navigate using Tab and interact with list items using Space to delete them!
+- This excercise is done, however in continuous improvement!
+</p>
 
 Some of the topics you might see in this project as for today:
 - Functional Components
@@ -19,5 +24,5 @@ Some of the topics you might see in this project as for today:
 # Project stage
 - This excercise is done and in continuous improvement.
 
-# Notes
+# Commentaries
 I'm triying to build a simple React App that implements all the fundamentals of React. Thank you for taking the time to review this simple project.
