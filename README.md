@@ -47,12 +47,15 @@ Last update: 16/07/2022
     <li>
         Little bit of Styling, later I'll implement <strong>Material UI</strong> and/or <strong>Styled Components</strong> 
     </li>
-<ul>
+</ul>
 
 <h2>Project stage</h2>
+
+<ul>
     <li>
         This excercise is done and in continuous improvement.
     </li>
+</ul>
 
 <h2>Commentaries</h2>
 I'm triying to build a simple React App that implements all the fundamentals of React. Thank you for taking the time to review this simple project.
